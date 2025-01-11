@@ -1,6 +1,5 @@
 import streamlit as st
-import requests
-import json
+
 
 # Custom CSS for Dark Mode with Vibrant Colors
 st.markdown(
