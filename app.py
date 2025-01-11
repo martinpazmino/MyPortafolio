@@ -135,7 +135,7 @@ elif page == 'Projects':
              "parametric design with automated manufacturing processes, emphasizing innovation in sustainable construction practices.")
     st.write("### Project Documents")
 
-    st.video("static/RobotJail.MP4")
+    st.video("static/RobotJail.mp4")
 
     st.header("BIM Project")
     st.write(
