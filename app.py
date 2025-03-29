@@ -91,7 +91,7 @@ elif page == 'About Me':
     with col2:
         st.image("static/Image_music.jpg", caption="Music Concert", use_container_width=True)
     with col3:
-        st.image("static/menature.jpg", caption="01-17-2005", use_container_width=True)
+        st.image("static/Me_nature.jpg", caption="01-17-2005", use_container_width=True)
 
     st.write("I am deeply grateful to walk a path where creativity, technology, and care for nature converge. Born and raised in Ecuador — a country rich in biodiversity yet marked by economic inequality — I have come to see design and engineering as tools for justice, not just utility. "
              "Now based in Augsburg, Germany, I am studying *Digitaler Baumeister*, a forward-looking program focused on the digital transformation of the construction industry. My journey is shaped by a multidisciplinary background in music and art — creative languages that have taught me that life is not only about what we see or hear, but about what we feel. These disciplines opened a new horizon for me, showing that thinking outside the box isn't just a skill, but a way of being. I see mathematics and engineering as forms of art — full of structure, rhythm, and beauty — and believe there is just as much science in art as there is art in science. "
