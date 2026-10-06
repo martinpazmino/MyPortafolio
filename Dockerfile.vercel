@@ -1,0 +1,14 @@
+# Runs the Streamlit portfolio as a Vercel Function from a container image.
+FROM python:3.12-slim
+
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+
+# Vercel sends traffic to $PORT. CORS/XSRF are off (as in .devcontainer) so the
+# WebSocket is accepted behind Vercel's proxy.
+CMD streamlit run app.py \
+    --server.port=${PORT:-8501} --server.address=0.0.0.0 --server.headless=true \
+    --server.enableCORS=false --server.enableXsrfProtection=false \
+    --browser.gatherUsageStats=false
